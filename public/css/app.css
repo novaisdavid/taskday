@@ -1,0 +1,23 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(217, 218, 221) !important;
+}
+.row{
+    margin-left: 90px !important;
+    margin-right: -50px !important;
+    padding: 1.5rem;
+}
+
+.linha{
+    line-height: 60px;
+    color: cyan;
+}
+
+.linhaFormulario{
+    height: 30px;
+    width: 30px;
+    line-height: 40px;
+    color: cyan;
+}
+

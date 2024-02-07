@@ -2,9 +2,13 @@
 
 O projeto Taskeday é uma aplicação que permitir a criação de tarefas que serão feitas no dia. Este projeto foi desenvolvido com o objetivo de consolidar e aprimorar os conhecimentos aprendido sobre
 a técnologia nodejs e com o banco de dados não relacional mongoDB, tais como:
+
 1- EXPRESS
+
 2- MONGOOSE
+
 3- AUTENTICAÇÃO (PASSPORT-LOCAL ESTRATEGY)
+
 4- HANDLEBARS (PARA O TAMPLATE)
 
 Funcionalidades Principais
@@ -37,5 +41,7 @@ Contato
 Se você tiver alguma dúvida ou sugestão sobre TASKDAY, sinta-se à vontade para entrar em contato:
 
 linkedin: www.linkedin.com/in/novais-david-43951a237
+
 Email: novaisdavid.19@gmail.com
+
 facebook: Novais David

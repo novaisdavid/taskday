@@ -12,8 +12,11 @@ a técnologia nodejs e com o banco de dados não relacional mongoDB, tais como:
 4- HANDLEBARS (PARA O TAMPLATE)
 
 Funcionalidades Principais
+
 CRIAR TAREFAS
+
 VISUALIZAR TAREFAS
+
 MARCAR A TAREFA COMO FEITA
 
 1-Instalação
@@ -32,9 +35,13 @@ Contribuição
 Contribuições são bem-vindas! Para contribuir com TASKDAY, siga estas etapas:
 
 1-Faça um fork do projeto
+
 2-Crie uma branch para sua feature (git checkout -b https://github.com/novaisdavid/taskday.git)
+
 3-Faça commit das suas mudanças (git commit -am 'Adicionando uma nova feature')
+
 4-Faça push para a branch (git push origin https://github.com/novaisdavid/taskday.git)
+
 5-Crie um novo Pull Request
 
 Contato

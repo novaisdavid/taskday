@@ -16,7 +16,7 @@ MARCAR A TAREFA COMO FEITA
 Para executar este projeto localmente, siga estas etapas:
 
 2-Clone este repositório:
-git clone https://github.com/seu-usuario/nome-do-projeto.git
+git clone https://github.com/novaisdavid/taskday.git
 
 3-Instale as dependências:
 npm install
@@ -28,9 +28,9 @@ Contribuição
 Contribuições são bem-vindas! Para contribuir com TASKDAY, siga estas etapas:
 
 1-Faça um fork do projeto
-2-Crie uma branch para sua feature (git checkout -b feature/MinhaFeature)
+2-Crie uma branch para sua feature (git checkout -b https://github.com/novaisdavid/taskday.git)
 3-Faça commit das suas mudanças (git commit -am 'Adicionando uma nova feature')
-4-Faça push para a branch (git push origin feature/MinhaFeature)
+4-Faça push para a branch (git push origin https://github.com/novaisdavid/taskday.git)
 5-Crie um novo Pull Request
 
 Contato

@@ -9,28 +9,42 @@
     </div>
 </div>
 <div class="row">
-    <table class="table table-active">
+    {{#each tarefas}}
+    <table class="table table-light">
         <thead>
-            <th class="col">itens</th>
-            <th class="col">itens2</th>
-            <th class="col">itens3</th>
-            <th class="col">Acção 1</th>
+            <tr>
+                <th class="col"></th>
+                <th class="col"></th>
+                <th class="col text-center" style="margin-left: 2rem !important;">Tarefa: {{titulo}}</th>
+                <th class="col"></th>
+                <th class="col"></th>
+            </tr>
+            <tr>
+                <th class="col">Item</th>
+                <th class="col">Estado Item</th>
+                <th class="col">Acção 1</th>
+                <th class="col">Acção 2</th>
+                <th class="col">Acção 3</th>
+            </tr>
         </thead>
         <tbody>
-            <th>
-                zzzzzzz
-                
-            </th>
-            <th>aaaa
-                
-            </th>
-            <th>
-                dddddd
-            </th>
-            <th>
-                <button class="btn btn-info">marcar como feito</button>
-            </th>
+            
+            {{#each tarefa}}
+               
+                <tr>
+                    <td>{{this}}</td>
+                    <td>aaaa</td>
+                    <td>dddddd</td>
+                    <td>
+                        <button class="btn btn-info">marcar como feito</button>
+                    </td>
+                    <td>
+                        <button class="btn btn-info">marcar como N feito</button>
+                    </td>
+                </tr>
+               
+            {{/each}}
         </tbody>
     </table>
-
+    {{/each}}
 </div>

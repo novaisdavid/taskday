@@ -5,6 +5,10 @@
     <link rel="stylesheet" href="/css/bootstrap.css">
     <link rel="stylesheet" href="/css/app.css">
      <link rel="stylesheet" href="/css/bootstrap.min.css">
+     <link rel="stylesheet" href="/css/msfmultiselect.min.css">
+     <link rel="stylesheet" href="/css/sweetalert2.css">
+     <script src="/js/sweetalert2.js"></script>
+      <script src="/js/msfmultiselect.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Taskday</title>
@@ -13,18 +17,22 @@
      {{>_navbar}}
     <div class="container m-2">
         <div class="text-center">
-           <!--/{{>_mensagem}}/--->  
+           {{>_mensagem}}  
         </div>
     {{{body}}}
     </div>
-    <footer class="bg-dark mt-5">
-        <div>
-            <p style="color:antiquewhite;">rodapé</p>
-        </div>
-    </footer>
+   <footer>
+    <a href="https://www.facebook.com/seu_perfil" target="_blank"><img src="/icones/facebook-f.svg" alt="Facebook"></a>
+    <a href="https://github.com/novaisdavid" target="_blank"><img src="/icones/github-alt.svg" alt="GitHub"></a>
+    <a href="mailto:novaisdavid.19@gmail.com"><img src="/icones/envelope-solid.svg" alt="E-mail"></a>
+    <a href="https://www.linkedin.com/in/seu_perfil" target="_blank"><img src="/icones/linkedin-in.svg" alt="LinkedIn"></a>
+    <p>Copyright@2023 Novais David</p>
+  </footer>
 </body>
 <script src="/js/bootstrap.js"></script>
 <script src="/js/app2.js"></script>
 <script src="/js/vendor/popper.min.js"></script>
 <script src="/js/bootstrap.min.js"></script>
+<script src="/jquery/jquery.slim.min.js"></script>
+<script src="/js/bootstrap.bundle.min.js"></script>
 </html>

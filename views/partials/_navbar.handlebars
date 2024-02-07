@@ -12,10 +12,11 @@
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0" >
+                        {{#if user}}
                         <li class="nav-line">
                             <a class="nav-link active" aria-current="page" href="/taskday">taskday</a>
                         </li>
-
+                        
                         <li class="nav-line">
                             <a class="nav-link active" aria-current="page" href="/taskday/criartarefa">Criar Tarefas</a>
                         </li>
@@ -23,11 +24,21 @@
                         <li class="nav-line">
                             <a class="nav-link active" aria-current="page" href="/taskday/vertarefascriadas">Tarefas Criadas</a>
                         </li>
+                        {{else}}
+                         <li class="nav-line">
+                            <a class="nav-link active" aria-current="page" href="/taskday">taskday</a>
+                        </li>
                         
+                        {{/if}}
                            
                     </ul>
-                    <a class="btn btn-dark"  href="#">login</a>
-                   
+                    {{#if user}}
+                        <i class="m-2 text-light">{{this}}</i>
+                        <a class="btn btn-danger"  href="/taskday/logout">Sair</a>
+                    {{else}}
+                    <a class="btn btn-dark"  href="/taskday/login">login</a>
+                    <a class="btn btn-info m-2"  href="/taskday/criarconta">Criar Conta</a>
+                    {{/if}}
                 </div>
             </div>
 

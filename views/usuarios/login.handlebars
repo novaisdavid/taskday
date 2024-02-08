@@ -1,0 +1,48 @@
+<div class="row mt-3">
+    <div class="col-xs-6">
+        <div class="align-items-center">
+            <div class="align-content-center">
+               <h2 class="text-center" id="texto_saida"></span></h2>
+                <input type="hidden" id="texto_entrada" value="FAÇA LOGIN E SE CONECTE AS SUAS TAREFAS!">
+                <hr class="linha">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    
+
+    <div class="col-md-8 login">
+      <form action="/taskday/login" method="post" class="row bg-light shadow">
+          <h3 class="text-center">Login</h3>
+          <hr class="linhaFormulario">
+            {{#if error}}
+            <i class="text-center" style="color:red;">{{error}}</i>
+            {{else}}
+            {{/if}}
+
+        <div class="col-md-12">
+            <label for="email">Seu e-mail</label>
+            <input type="email" name="email" id="email" class="form-control" placeholder="Seu e-mail ex.:novais@gmail.com">
+            <div style="display:none;" id="">
+                <i class="text-center" style="color: red;"> Deve adicionar itens</i>
+            </div>
+        </div>
+        
+        <div class="col-md-12">
+            <label for="email">Palavara Passe</label>
+            <input type="password" name="passe" id="passe" class="form-control" placeholder="Palavra Passe ex.:0213pAS">
+            <div style="display:none;" id="">
+                <i class="text-center" style="color: red;"> Deve adicionar itens</i>
+            </div>
+        </div>
+
+        <div class="col">
+            <button type="submit" class="btn btn-success mt-3 mb-2" onclick="" >Logar</button>
+         </div>
+
+       </form>
+    </div>
+</div>
+

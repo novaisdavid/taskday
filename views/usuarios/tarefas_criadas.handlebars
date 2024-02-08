@@ -1,0 +1,45 @@
+<div class="row mt-3">
+    <div class="col-xs-6">
+        <div class="align-items-center">
+            <div class="align-content-center">
+                <h2 class="text-center">VEJA AS TUAS TAREFAS CRIADAS NO <span class="ts-4">TASK DAY</span></h2>
+                <hr class="linha">
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    {{#each tarefas}}
+    <table class="table table-light">
+        <thead>
+            <tr>
+                <th class="col text-center" style="margin-left: 2rem !important;">Tarefa: {{titulo}}</th>
+            </tr>
+            <tr>
+                <th class="col">Item</th>
+            </tr>
+        </thead>
+       
+        <tbody>
+            {{#each tarefa}}
+                <tr>
+                    <td>{{this}}</td>
+                </tr>
+            {{/each}}
+        </tbody>
+         <tfoot>
+             {{#if  estado}}
+                    <tr>
+                   <td> <a class="btn btn-secondary">Tarefa Finalizada</a> </td>
+               </tr>
+             {{else}}
+                <tr>
+                   <td> <a class="btn btn-danger" href="/taskday/concluirtarefa/{{id}}">Marcar Como Feita</a> </td>
+               </tr>
+             {{/if}}
+               
+        </tfoot>
+    </table>
+    {{/each}}
+</div>
+

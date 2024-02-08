@@ -1,0 +1,43 @@
+{{#if msg_sucesso}}
+    <input type="hidden" id="texto-sucesso" value="{{msg_sucesso}}">
+{{/if}}
+
+{{#if msg_erro}}
+    <input type="hidden" id="texto-erro" value="{{msg_erro}}">
+{{/if}}
+
+
+<script>
+    var texto_sucesso = document.getElementById("texto-sucesso");
+    console.log("TEXTOS::: SUCESSSO: "+texto_sucesso);
+    if(texto_sucesso.value == undefined || texto_sucesso.value == null){
+            console.log("");
+
+    }else if(texto_sucesso.value != undefined || texto_sucesso.value != null){
+    
+            Swal.fire({
+                icon: "success",
+                title: texto_sucesso.value,
+                showConfirmButton: true,
+            });
+    }
+</script>
+
+<script>
+
+var texto_erro = document.getElementById("texto-erro");
+console.log("TEXTOS::: ERRO: "+texto_erro.value);
+
+if(texto_erro.value == undefined || texto_erro.value == null){
+     console.log("");
+
+}else if(texto_erro.value != undefined || texto_erro.value != null){
+    
+    Swal.fire({
+                icon: "error",
+                title: texto_erro.value,
+                showConfirmButton: true,
+            });
+}
+
+</script>

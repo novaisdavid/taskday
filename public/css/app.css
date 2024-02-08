@@ -1,0 +1,120 @@
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    height: 132vh;
+    background-color: rgb(217, 218, 221) !important;
+    background-image: url('../imagens/escrita.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.row{
+    margin-left: 90px !important;
+    margin-right: -50px !important;
+    padding: 1.5rem;
+}
+
+.linha{
+    line-height: 60px;
+    color: cyan;
+}
+
+.linhaFormulario{
+    height: 30px;
+    width: 30px;
+    line-height: 40px;
+    color: cyan;
+}
+
+/* estilo do Texto automático*/
+.texto_principal {
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    font-size: 24px;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid #000;
+    display: inline-block;
+  }
+
+  /* Adicionando animação para o cursor piscar */
+  @keyframes blink {
+    0%, 100% { border-color: transparent; }
+    50% { border-color: #fff; }
+  }
+
+  #texto_saida{
+    color: #fff;
+  }
+
+  #texto_saida::after {
+    color: #fff;
+    content: "✍🏻"; /* Representação do cursor */
+    border-left: 2px solid #000;
+    animation: blink 1s step-end infinite;
+    display: inline-block;
+    margin-left: 2px; /* Espaçamento entre o texto e o cursor */
+  }
+/*================*/
+
+/*Cards no carrousel*/
+.cardContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+    transition: transform 0.5s ease-in-out;
+}
+/*=====================*/
+/* estilo do card flutuante*/
+.card-flutuante{
+    position: relative;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    animation: floatAnimation 3s infinite alternate;
+}
+
+
+@keyframes floatAnimation {
+    0% {
+        transform: translateY(0);
+    }
+
+    50%{
+       
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(-15px);
+       
+    }
+}
+/* =============================*/
+
+/* card do login*/
+.login{
+    margin-left: 100px;
+}
+
+/*footer*/
+footer {
+    background-color: rgb(167, 165, 165);
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 47vh;
+  }
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+/*====================*/

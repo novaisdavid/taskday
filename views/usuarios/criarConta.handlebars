@@ -1,0 +1,76 @@
+<div class="row mt-3">
+    <div class="col-xs-6">
+        <div class="align-items-center">
+            <div class="align-content-center">
+               <h2 class="text-center" id="texto_saida"></span></h2>
+                <input type="hidden" id="texto_entrada" value="CRIE CONTA NO TASK DAY">
+                <hr class="linha">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+       <div class="">
+        <div class="card shadow card-flutuante">
+            <div class="align-content-center card-header bg-primary" style="color:aliceblue;">
+                <h4 class="tittle"> O QUE ESTÁS A ESPERA? CRIE JÁ SUA CONTA NO <span class="ts-4">TASK DAY</span></h4>
+            </div>
+             <div class="align-content-center card-body">
+                <img class="img-fluid" src="/imagens/o que ha.jpg">
+            </div>
+            <div class="card-footer">
+                <p>Crie sua conta e fique a par das suas tarefas 👌</p>
+
+            </div>
+        </div>
+   
+       </div>
+    </div>
+
+    <div class="col-md-8">
+      <form action="/taskday/creatinguser" method="post" class="row bg-light shadow">
+          <h3 class="text-center">Criar Conta</h3>
+          <hr class="linhaFormulario">
+        <div class="col-md-12">
+            <label for="nome_tarefa">Seu Nome</label>
+            <input type="text" name="nome_usuario" id="nome_usuario" class="form-control" onblur=""  placeholder="Seu Nome ex.: Novais David">
+            <div style="display:none;" id="">
+                <i class="text-center" style="color: red;"> Deve inserir um titulo</i>
+            </div>
+        </div>
+
+        <div class="col-md-12">
+            <label for="email">Seu e-mail</label>
+            <input type="email" name="email" id="email" class="form-control" placeholder="Seu e-mail ex.:novais@gmail.com">
+            <div style="display:none;" id="">
+                <i class="text-center" style="color: red;"> Deve adicionar itens</i>
+            </div>
+        </div>
+
+        
+        <div class="col-md-12">
+            <label for="email">Palavara Passe</label>
+            <input type="password" name="passe" id="passe" class="form-control" placeholder="Palavra Passe ex.:0213pAS">
+            <div style="display:none;" id="">
+                <i class="text-center" style="color: red;"> Deve adicionar itens</i>
+            </div>
+        </div>
+
+        <div class="col-md-12">
+            <label for="email">Repete Palavara Passe</label>
+            <input type="password" name="passe2" id="passe2" class="form-control" placeholder="Palavra Passe ex.:0213pAS">
+            <div style="display:none;" id="">
+                <i class="text-center" style="color: red;"> Deve adicionar itens</i>
+            </div>
+        </div>
+
+        <div class="col">
+            <button type="submit" class="btn btn-success mt-3 mb-2" onclick="" >Criar</button>
+         </div>
+
+       </form>
+    </div>
+</div>
+
